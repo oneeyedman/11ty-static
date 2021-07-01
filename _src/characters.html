@@ -1,0 +1,10 @@
+---
+layout: 'layouts/base.html'
+---
+{% assign hpSearch = articles | lookup: "Weasley" %}
+
+<ul>
+  {% for hp in articles %}
+  <li><a href="{{ hp.name | slug }}">{{ hp.name }}</a></li>
+  {% endfor %}
+</ul>

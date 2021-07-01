@@ -1,0 +1,11 @@
+---
+layout: 'layouts/character.html'
+pagination: 
+  data: articles
+  size: 1
+  alias: article
+permalink: characters/{{article.name | slug}}/index.html
+
+---
+<img src="{{ article.image }}" alt="{{ article.name }}">
+<p>{{article.name}}</p>

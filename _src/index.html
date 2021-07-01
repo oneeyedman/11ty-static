@@ -1,0 +1,21 @@
+---
+title: 'Me tienes hasta los cojozonazos'
+layout: 'layouts/base.html'
+---
+
+<h1>💩</h1>
+
+<ul>
+  {% for post in collections.posts %}
+  <li>
+    <a href="{{post.url}}">{{post.data.title}}fsfsdf</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<ul>
+{% for meet in meetups %}
+  <li>{{meet.title}}</li>
+{% endfor %}
+</ul>
+
